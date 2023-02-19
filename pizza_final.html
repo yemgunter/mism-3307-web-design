@@ -31,8 +31,8 @@
         <li><label for="form-tel">Telephone Number:</label> <input type="tel" name="telephone" id="form-tel"></li>
         <li><label for="form-email">Email: <input type="email" name="email" id="form-email"></label></li>
         <li>Delivery instructions:<br>
-          <textarea name="instructions" rows="4" cols="60" maxlength="400" id="form-story"
-            placeholder="No more than 400 characters long"></textarea>
+          <textarea name="instructions" rows="4" cols="60" maxlength="200" id="form-story"
+            placeholder="No more than 200 characters long"></textarea>
         </li>
       </ul>
     </fieldset>
@@ -43,12 +43,14 @@
       <legend>Pizza specs</legend>
       <fieldset>
         <legend>Crust <em>(Choose one)</em>:</legend>
-        <ul>
-          <li><label><input type="radio" name="crust" value="white"> Classic white</label></li>
-          <li><label><input type="radio" name="crust" value="multigrain"> Multigrain</label></li>
-          <li><label><input type="radio" name="crust" value="cheese crust"> Cheese-stuffed crust</label></li>
-          <li><label><input type="radio" name="crust" value="gluten free"> Gluten-free</label></li>
-        </ul>
+        <select name="crust">
+          <option>Classic white</option>
+          <option>Multigrain</option>
+          <option>Cheese-Stuffed Crust</option>
+          <option>Gluten-Free</option>
+          <option>Thin Crust</option>
+          <option>Flour Dusted</option>
+        </select>
       </fieldset>
 
       <fieldset>
